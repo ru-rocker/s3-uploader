@@ -53,14 +53,14 @@ exports.handler = async (event) => {
             await s3.upload(params).promise().then(function(data) {
                 console.log(`File uploaded successfully. ${data.Location}`);
                 return {
-                    'statusCode': 200,
-                    'data': JSON.stringify(data)
+                    statusCode: 200,
+                    body: JSON.stringify(data)
                 };
             }, function (err) {
                 console.error("Upload failed", err);
                 return {
-                    'statusCode': 500,
-                    'data': JSON.stringify(err)
+                    statusCode: 500,
+                    body: JSON.stringify(err)
                 };
             });
         return response;
