@@ -20,7 +20,7 @@ Only using aws cli:
         -x '\.gitignore' -x '*.DS_Store*' \
         -x '*.md'
 
-    aws lambda update-function-code --function-name azdiscover-upload-to-s3 --zip-file fileb://function.zip
+    aws lambda update-function-code --function-name yourlambda-name --zip-file fileb://function.zip
 
 
 This syntax will be translated into pipelines.
