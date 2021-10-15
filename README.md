@@ -1,5 +1,5 @@
 # Overview
-Lambda function for uploading submission data to S3.
+Lambda function for uploading submission data to S3, shipped with unit test using jest.
 
 # Environment Variables
 * `BUCKET_NAME` : bucket name
@@ -24,6 +24,3 @@ Only using aws cli:
 
 
 This syntax will be translated into pipelines.
-
-# TODO
-Terraform, nanti aja dahh..
