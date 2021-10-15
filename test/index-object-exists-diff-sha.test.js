@@ -55,7 +55,7 @@ describe('lambda_s3_uploader', () => {
         console.log('result', result)
         try {
             expect(result)
-                .toEqual( { statusCode: 200, data: '{}' });
+                .toEqual( { statusCode: 200, body: '{}' });
 
         } catch (e) {
             console.log(e);
